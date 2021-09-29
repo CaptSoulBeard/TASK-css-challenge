@@ -12,20 +12,25 @@ body {
 }
 
 .movie-card {
+  color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 .movie-image {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   object-position: 0% 0%;
   overflow: hidden;
-  width: 300px;
-  height: 300px;
 }
 .movie-details-container {
-  position: relative;
 }
 .descriptions {
-  color: white;
-  padding: 5px;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 
 /*A gift from us!*/
@@ -33,7 +38,9 @@ body {
   /*
     This gradient was made by this website https://cssgradient.io/
 */
+  z-index: 1;
   position: absolute;
+  bottom: 0;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
@@ -45,4 +52,5 @@ body {
 }
 .movie-title {
   font-size: 30px;
+  font-weight: bold;
 }
